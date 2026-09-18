@@ -492,6 +492,7 @@ const pronounTableData = {
     { person: "複数名詞の例（girlsの場合）", subj: "girls", possessive: "girls'", obj: "girls", mine: "girls'" }
   ]
 };
+
 // Unit1〜Unit10のすべてのPartの単語を1つにまとめた「すべて」用データを作成
 const allUnitsCombinedData = {
   unit: "すべて",
@@ -500,7 +501,6 @@ const allUnitsCombinedData = {
       part: "全重要単語・フレーズ",
       words: allUnitsData.reduce((acc, u) => {
         u.parts.forEach(p => {
-          // 重複を防ぎたい場合はここでチェックも可能ですが、そのまま全収録します
           acc.push(...p.words);
         });
         return acc;
@@ -509,17 +509,16 @@ const allUnitsCombinedData = {
   ]
 };
 
-// 既存の配列の先頭（または末尾）に「すべて」のデータを組み込む
-// これによりインデックスの最後に「すべて」が配置されます
 allUnitsData.push(allUnitsCombinedData);
+
 // -------------------------------------------------------------
-// 以下、サイトを動かすためのメインのロジック・描画スクリプト
+// メインのロジック・描画スクリプト
 // -------------------------------------------------------------
 
 let currentUnitIndex = 0;
 let currentPartIndex = 0;
 let currentMode = 'memorize';
-let onlyImportant = false;
+let currentFilter = 'all'; // 'all', 'important', 'favorite'
 
 let comboCount = 0;
 let maxCombo = 0;
@@ -634,10 +633,13 @@ function switchMode(mode) {
   }
 }
 
-function changeImportantFilter(status) {
-  onlyImportant = status;
-  document.getElementById('filter-all').classList.toggle('active', !status);
-  document.getElementById('filter-important').classList.toggle('active', status);
+// HTML側からの呼び出し (changeFilterMode) に対応
+function changeFilterMode(filterType) {
+  currentFilter = filterType;
+  document.getElementById('filter-all').classList.toggle('active', filterType === 'all');
+  document.getElementById('filter-important').classList.toggle('active', filterType === 'important');
+  document.getElementById('filter-favorite').classList.toggle('active', filterType === 'favorite');
+
   if(currentMode !== 'question' && currentMode !== 'pronoun') {
     renderContent();
   } else if(currentMode === 'question') {
@@ -648,9 +650,11 @@ function changeImportantFilter(status) {
 function changeDifficulty(diff) {
   currentDifficulty = diff;
   ['easy', 'normal', 'hard'].forEach(d => {
-    document.getElementById('set-' + d).classList.remove('active');
+    const btn = document.getElementById('set-' + d);
+    if(btn) btn.classList.remove('active');
   });
-  document.getElementById('set-' + diff).classList.add('active');
+  const targetDiffBtn = document.getElementById('set-' + diff);
+  if(targetDiffBtn) targetDiffBtn.classList.add('active');
   if(currentMode === 'question') restartQuizSet();
 }
 
@@ -670,6 +674,11 @@ function toggleFavorite(wordObj, btn) {
     btn.innerText = '★';
   }
   saveFavorites();
+
+  // お気に入りフィルター中にお気に入りを外した場合にリアルタイムで反映する
+  if(currentFilter === 'favorite' && currentMode !== 'question' && currentMode !== 'pronoun') {
+    renderContent();
+  }
 }
 
 function speakWord(text) {
@@ -699,8 +708,10 @@ function renderContent() {
   const partObj = unitObj.parts[currentPartIndex];
   let list = isReviewingWrong ? wrongWordsList : partObj.words;
 
-  if(onlyImportant) {
+  if(currentFilter === 'important') {
     list = list.filter(w => w.isImportant);
+  } else if(currentFilter === 'favorite') {
+    list = list.filter(w => favorites.some(f => f.word === w.word && f.meaning === w.meaning));
   }
 
   if(list.length === 0) {
@@ -719,7 +730,6 @@ function renderContent() {
 
     const ttsBtn = (txt) => txt !== '—' ? `<button class="tts-btn" onclick="speakWord('${txt.replace(/'/g, "\\'")}')" title="音声">🔊</button>` : '';
     
-    // 複数単語のレイアウト・見やすさ調整
     const formatWordToken = (wText) => {
       if(wText === '—') return '—';
       const tokens = wText.split(' ');
@@ -754,7 +764,6 @@ function renderContent() {
       ppartColHtml = `<td class="col-ppart">${inputCell(item.ppart)}</td>`;
       ingColHtml = `<td class="col-ing">${inputCell(item.ing)}</td>`;
     } else {
-      // 一覧モード
       wordColHtml = `<td class="col-word"><span class="${wordClass}" style="color:var(--primary);">${formatWordToken(item.word)}</span>${starMark}${shortBadge}${ttsBtn(item.word)}</td>`;
       pastColHtml = `<td class="col-past">${formatWordToken(item.past)}${ttsBtn(item.past)}</td>`;
       ppartColHtml = `<td class="col-ppart">${formatWordToken(item.ppart)}${ttsBtn(item.ppart)}</td>`;
@@ -791,7 +800,8 @@ function checkAnswers() {
   let unitObj = allUnitsData[currentUnitIndex];
   let partObj = unitObj.parts[currentPartIndex];
   let currentList = isReviewingWrong ? wrongWordsList : partObj.words;
-  if(onlyImportant) currentList = currentList.filter(w => w.isImportant);
+  if(currentFilter === 'important') currentList = currentList.filter(w => w.isImportant);
+  else if(currentFilter === 'favorite') currentList = currentList.filter(w => favorites.some(f => f.word === w.word && f.meaning === w.meaning));
 
   let nextWrongList = [];
   let hasMistake = false;
@@ -847,13 +857,12 @@ function resetQuiz() {
   renderContent();
 }
 
-// 代名詞表の描画
 function renderPronounTable() {
   const area = document.getElementById('pronoun-area');
   area.innerHTML = `
     <div class="section-card">
       <div class="sticky">代名詞の活用表</div>
-      <div class="pronoun-note">※上は「単数」、下は「複数」を表しています。主語、〜の（所有格）、目的語（〜を・に）、〜のもの（所有代名詞）で分類されています。</div>
+      <div class="pronoun-note">※上は「単数」、下は「複数」を表しています。主語、〜の（所有格）、目的格（〜を・に）、〜のもの（所有代名詞）で分類されています。</div>
       
       <h3 class="section-title" style="margin-top:15px;font-size:15px;">■ 単数（1人称・2人称・3人称）</h3>
       <div class="pronoun-wrap">
@@ -910,7 +919,6 @@ function renderPronounTable() {
   `;
 }
 
-// 4択問題モード関連
 function restartQuizSet() {
   currentQuestionCount = 0;
   correctCount = 0;
@@ -979,7 +987,9 @@ function generateQuestion() {
   let unitObj = allUnitsData[currentUnitIndex];
   let partObj = unitObj.parts[currentPartIndex];
   let list = partObj.words.filter(w => w.word !== '—');
-  if(onlyImportant) list = list.filter(w => w.isImportant);
+  
+  if(currentFilter === 'important') list = list.filter(w => w.isImportant);
+  else if(currentFilter === 'favorite') list = list.filter(w => favorites.some(f => f.word === w.word && f.meaning === w.meaning));
 
   const feedbackBox = document.getElementById('qa-feedback-box');
   feedbackBox.innerHTML = '';
@@ -988,7 +998,7 @@ function generateQuestion() {
     document.getElementById('timer-container').style.display = 'none';
     document.getElementById('combo-display').style.display = 'none';
     document.getElementById('qa-mode-title').innerText = '【エラー】';
-    document.getElementById('qa-question-text').innerText = 'このセクションには4択問題を作成するのに十分な単語（4単語以上）がありません。別のPartを選んでください。';
+    document.getElementById('qa-question-text').innerText = 'この条件では4択問題を作成するのに十分な単語（4単語以上）がありません。フィルターや別のPartを選んでください。';
     document.getElementById('qa-options-box').innerHTML = '';
     return;
   }
@@ -1110,5 +1120,4 @@ function setupScrollEvent() {
   });
 }
 
-// 読み込み時にサイトの初期化を実行
 window.addEventListener('DOMContentLoaded', initSite);
