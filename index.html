@@ -501,17 +501,18 @@ color:#94a3b8;
 <div class="note">※ 人名は省く。</div>
 
 <div class="important-info">
-<strong>★ 重要単語について</strong><br>
+<strong>★ 重要単語・お気に入りについて</strong><br>
 教科書で特に覚えたい重要語として登録した単語は<strong>太文字</strong>で表示しています。
-「★重要単語だけ練習」を選ぶと、太文字の単語だけを使って練習できます。
+フィルターで「★重要単語だけ練習」や「⭐お気に入りのみ」を選んで効率よく練習できます！
 </div>
 
 <div class="unit-tabs" id="unit-tabs"></div>
 <div class="part-tabs" id="part-tabs"></div>
 
 <div class="filter-row">
-<button class="filter-btn active" id="filter-all" onclick="changeImportantFilter(false)">すべて</button>
-<button class="filter-btn" id="filter-important" onclick="changeImportantFilter(true)">★重要単語だけ練習</button>
+<button class="filter-btn active" id="filter-all" onclick="changeFilterMode('all')">すべて</button>
+<button class="filter-btn" id="filter-important" onclick="changeFilterMode('important')">★重要単語だけ練習</button>
+<button class="filter-btn" id="filter-favorite" onclick="changeFilterMode('favorite')">⭐お気に入りのみ</button>
 </div>
 
 <div class="mode-select">
