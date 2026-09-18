@@ -1,9 +1,12 @@
-// 東京書籍 NEW HORIZON English Course 中学1年生 単語・熟語データ
+// 東京書籍 NEW HORIZON English Course 中学1年生・2年生 単語・熟語データ
 // 重要単語は isImportant: true に設定しています。
 
 const allUnitsData = [
+  // ==========================================
+  // 中学1年生
+  // ==========================================
   {
-    unit: "Unit1",
+    unit: "【中1】Unit1",
     parts: [
       {
         part: "part1",
@@ -40,13 +43,13 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit2",
+    unit: "【中1】Unit2",
     parts: [
       {
         part: "part1",
         words: [
           { meaning: "クラス、学級、授業", word: "class", past: "—", ppart: "—", ing: "—", isImportant: true },
-        { meaning: "私たちの", word: "our", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "私たちの", word: "our", past: "—", ppart: "—", ing: "—", isImportant: true },
           { meaning: "カナダ", word: "Canada", past: "—", ppart: "—", ing: "—", isImportant: false },
           { meaning: "アメリカ", word: "America", past: "—", ppart: "—", ing: "—", isImportant: false },
           { meaning: "〜が得意である", word: "be good at", past: "—", ppart: "—", ing: "—", isImportant: false },
@@ -87,7 +90,7 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit3",
+    unit: "【中1】Unit3",
     parts: [
       {
         part: "part1",
@@ -127,7 +130,7 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit4",
+    unit: "【中1】Unit4",
     parts: [
       {
         part: "part1",
@@ -173,7 +176,7 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit5",
+    unit: "【中1】Unit5",
     parts: [
       {
         part: "part1",
@@ -215,11 +218,27 @@ const allUnitsData = [
           { meaning: "目玉焼き", word: "fried egg", past: "—", ppart: "—", ing: "—", isImportant: false },
           { meaning: "〜のてっぺんに", word: "on top of", past: "—", ppart: "—", ing: "—", isImportant: false }
         ]
+      },
+      {
+        part: "Read and Think",
+        words: [
+          { meaning: "カフェ", word: "cafe", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "ウェブサイト", word: "website", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "人気の", word: "popular", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "オーナー、所有者", word: "owner", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "知っている", word: "know", past: "knew", ppart: "known", ing: "knowing", isImportant: true },
+          { meaning: "パティ", word: "patty", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "揚げた", word: "fried", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "てっぺん、最高部", word: "top", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "素晴らしい", word: "wonderful", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "目玉焼き", word: "fried egg", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜のてっぺんに", word: "on top of", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
       }
     ]
   },
   {
-    unit: "Unit6",
+    unit: "【中1】Unit6",
     parts: [
       {
         part: "part1",
@@ -274,7 +293,7 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit7",
+    unit: "【中1】Unit7",
     parts: [
       {
         part: "part1",
@@ -316,7 +335,7 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit8",
+    unit: "【中1】Unit8",
     parts: [
       {
         part: "part1",
@@ -369,7 +388,7 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit9",
+    unit: "【中1】Unit9",
     parts: [
       {
         part: "part1",
@@ -419,7 +438,7 @@ const allUnitsData = [
     ]
   },
   {
-    unit: "Unit10",
+    unit: "【中1】Unit10",
     parts: [
       {
         part: "part1",
@@ -472,6 +491,473 @@ const allUnitsData = [
         ]
       }
     ]
+  },
+
+  // ==========================================
+  // 中学2年生
+  // ==========================================
+  {
+    unit: "【中2】Unit0",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "同じ、同一の", word: "same", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "経験、体験", word: "experience", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "実は、本当は", word: "actually", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "ラーメン", word: "ramen", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "即座の、緊急の、食べ物が即席の", word: "instant", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "ヌードル、麺", word: "noodle", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "ところで", word: "by the way", past: "—", ppart: "—", ing: "—", isImportant: true }
+        ]
+      }
+    ]
+  },
+  {
+    unit: "【中2】Unit1",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "金色の、素晴らしい", word: "golden", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "休日、休暇", word: "holiday", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "シンガポール", word: "Singapore", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "飛ぶこと、飛行、便、空の旅", word: "flight", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "到着する", word: "arrive", past: "arrived", ppart: "arrived", ing: "arriving", isImportant: true },
+          { meaning: "空港、飛行場", word: "airport", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "すぐに、まもなく", word: "soon", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "またね。", word: "See you.", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "part2",
+        words: [
+          { meaning: "〜でしょう、〜だろう、〜するつもりだ", word: "will", past: "would", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "わくわくした", word: "excited", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "シーフード", word: "seafood", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "予約", word: "reservation", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 1",
+        words: [
+          { meaning: "メートル", word: "meter", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "身長または高さが〜ある", word: "tall", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜の重さがある", word: "weigh", past: "weighed", ppart: "weighed", ing: "weighing", isImportant: true },
+          { meaning: "トン", word: "ton", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を見つける、発見する", word: "find", past: "found", ppart: "found", ing: "finding", isImportant: true },
+          { meaning: "言語、言葉", word: "language", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "ドル", word: "dollar", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "例、実例", word: "example", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "連絡する、意思の疎通をする", word: "communicate", past: "communicated", ppart: "communicated", ing: "communicating", isImportant: true },
+          { meaning: "例えば", word: "for example", past: "—", ppart: "—", ing: "—", isImportant: true }
+        ]
+      },
+      {
+        part: "Read and Think 2",
+        words: [
+          { meaning: "絵、絵画", word: "painting", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "かべ", word: "wall", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "驚いた、びっくりした", word: "surprised", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "区域、場所、地域", word: "area", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "インド", word: "India", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "モスク、イスラム教寺院", word: "mosque", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "文化", word: "culture", past: "—", ppart: "—", ing: "—", isImportant: true }
+        ]
+      }
+    ]
+  },
+  {
+    unit: "【中2】Unit2",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "特に、とりわけ", word: "especially", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜を注文する", word: "order", past: "ordered", ppart: "ordered", ing: "ordering", isImportant: true },
+          { meaning: "トッピング", word: "topping", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "いろいろな", word: "various", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "味、風味", word: "flavor", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "しょうゆ", word: "soy sauce", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "塩、食塩", word: "salt", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜など", word: "~, and so on", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "part2",
+        words: [
+          { meaning: "スピーチ", word: "speech", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "いつか、そのうち", word: "sometime", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "もし〜ならば", word: "if", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜を加える、足す", word: "add", past: "added", ppart: "added", ing: "adding", isImportant: true },
+          { meaning: "バター", word: "butter", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜したい", word: "would love to", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 1",
+        words: [
+          { meaning: "興味を持っている", word: "interested", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "忘れる", word: "forget", past: "forgot", ppart: "forgotten", ing: "forgetting", isImportant: true },
+          { meaning: "種類", word: "kind", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜をベースにした", word: "based", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜だから", word: "because", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "濃い、どろっとした", word: "thick", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "おすすめの", word: "recommended", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "製造業者、メーカー", word: "manufacturer", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "早く", word: "early", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜に興味がある", word: "be interested in ~", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜種類の…", word: "~ kind of ...", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 2",
+        words: [
+          { meaning: "〜を反映する", word: "reflect", past: "reflected", ppart: "reflected", ing: "reflecting", isImportant: true },
+          { meaning: "気候", word: "climate", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "生活（lifeの複数形）", word: "lives", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "創造性、独創性", word: "creativity", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "シェフ、コック長", word: "chef", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "外国の", word: "foreign", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "変化、変種", word: "variation", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "イタリア", word: "Italy", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を創造する、作り出す", word: "create", past: "created", ppart: "created", ing: "creating", isImportant: true },
+          { meaning: "ソース", word: "sauce", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "変わる、変化する", word: "change", past: "changed", ppart: "changed", ing: "changing", isImportant: true },
+          { meaning: "〜出身である、〜からきている", word: "come from ~", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "これが〜です。ここに〜があります。〜をどうぞ。", word: "Here is ~ .", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "…にちなんで〜を名付ける", word: "name ~ after...", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      }
+    ]
+  },
+  {
+    unit: "【中2】Unit3",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "職業", word: "career", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "情報", word: "information", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "国際的な", word: "international", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "保育所、託児所", word: "nursery", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "メモ、覚書", word: "note", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "自分自身の、独自の", word: "own", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "付け札、下げ札、荷札", word: "tag", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "はし", word: "chopstick", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "絵本、図巻", word: "picture book", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "part2",
+        words: [
+          { meaning: "〜を選ぶ", word: "choose", past: "chose", ppart: "chosen", ing: "choosing", isImportant: true },
+          { meaning: "色彩に富んだ", word: "colorful", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "例、挿絵、図、イラスト", word: "illustration", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜はどうですか。", word: "How about ~?", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 1",
+        words: [
+          { meaning: "かわいい", word: "pretty", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "重要な、大切な", word: "important", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "月", word: "moon", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "位置する、ある", word: "lie", past: "lay", ppart: "lain", ing: "lying", isImportant: true },
+          { meaning: "葉", word: "leaf", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "ポンとなる音", word: "pop", past: "popped", ppart: "popped", ing: "popping", isImportant: false },
+          { meaning: "ごく小さい", word: "tiny", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "イモムシ、毛虫", word: "caterpillar", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "西洋ナシ、西洋ナシの木", word: "pear", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "西洋李、プラム", word: "plum", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "のぼる", word: "come up", past: "came up", ppart: "come up", ing: "coming up", isImportant: false },
+          { meaning: "〜から出てくる", word: "come out of ~", past: "came out of ~", ppart: "come out of ~", ing: "coming out of ~", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 2",
+        words: [
+          { meaning: "〜を学ぶ、習う", word: "learn", past: "learned / learnt", ppart: "learned / learnt", ing: "learning", isImportant: true },
+          { meaning: "必要な", word: "necessary", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜を調整する", word: "adjust", past: "adjusted", ppart: "adjusted", ing: "adjusting", isImportant: false },
+          { meaning: "スピード、速度", word: "speed", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "話、ものがたり", word: "story", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "難しい、困難な", word: "difficult", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "文", word: "sentence", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "はっきりと", word: "clearly", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "理解する、わかる", word: "understand", past: "understood", ppart: "understood", ing: "understanding", isImportant: true },
+          { meaning: "微笑む、微笑する", word: "smile", past: "smiled", ppart: "smiled", ing: "smiling", isImportant: true },
+          { meaning: "手をたたく、〜に拍手する", word: "clap", past: "clapped", ppart: "clapped", ing: "clapping", isImportant: false },
+          { meaning: "うれしい", word: "glad", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "大きい声で", word: "loud", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "心から、本気で、誠実に", word: "sincerely", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜をありがとう。", word: "Thank you for ~.", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "何度も何度も", word: "again and again", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "これからは、今度は", word: "from now on", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      }
+    ]
+  },
+  {
+    unit: "【中2】Unit4",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "ホームステイ", word: "homestay", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "忠告、助言", word: "advise", past: "advised", ppart: "advised", ing: "advising", isImportant: false },
+          { meaning: "一員、メンバー", word: "member", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "客、泊り客", word: "guest", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜に従う、〜を守る", word: "follow", past: "followed", ppart: "followed", ing: "following", isImportant: true },
+          { meaning: "規則、ルール", word: "rule", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "主人", word: "host", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "完全な、完璧な、最適な", word: "perfect", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜しなければならない", word: "have to ~", past: "had to ~", ppart: "—", ing: "—", isImportant: true }
+        ]
+      },
+      {
+        part: "part2",
+        words: [
+          { meaning: "〜しなければならない", word: "must", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "シャワー", word: "shower", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "限界、限度、制限", word: "limit", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜してはいけない", word: "mustn't", past: "—", ppart: "—", ing: "—", isImportant: true }
+        ]
+      },
+      {
+        part: "Read and Think 1",
+        words: [
+          { meaning: "年配の", word: "elderly", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "夫婦", word: "couple", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "居間、リビングルーム", word: "living room", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を終える", word: "finish", past: "finished", ppart: "finished", ing: "finishing", isImportant: true },
+          { meaning: "何も〜ない", word: "nothing", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜すべきである", word: "should", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "取り皿", word: "plate", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を傷つける", word: "hurt", past: "hurt", ppart: "hurt", ing: "hurting", isImportant: false },
+          { meaning: "感情、気持ち", word: "feeling", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "床につく、寝る", word: "go to bed", past: "went to bed", ppart: "gone to bed", ing: "going to bed", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 2",
+        words: [
+          { meaning: "〜に答える", word: "answer", past: "answered", ppart: "answered", ing: "answering", isImportant: true },
+          { meaning: "に入る", word: "enter", past: "entered", ppart: "entered", ing: "entering", isImportant: false },
+          { meaning: "〜を説明する", word: "explain", past: "explained", ppart: "explained", ing: "explaining", isImportant: true },
+          { meaning: "〜と感じる、気持ちがする", word: "feel", past: "felt", ppart: "felt", ing: "feeling", isImportant: true },
+          { meaning: "最後", word: "end", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "続ける、保つ", word: "keep", past: "kept", ppart: "kept", ing: "keeping", isImportant: true },
+          { meaning: "注意深く", word: "carefully", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "服などを脱ぐ", word: "take off", past: "took off", ppart: "taken off", ing: "taking off", isImportant: false },
+          { meaning: "〜したい気がする", word: "feel like ~ing", past: "felt like ~ing", ppart: "felt like ~ing", ing: "feeling like ~ing", isImportant: false },
+          { meaning: "結局", word: "in the end", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "たがいに", word: "each other", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜し続ける", word: "keep ~ing", past: "kept ~ing", ppart: "kept ~ing", ing: "keeping ~ing", isImportant: false },
+          { meaning: "未来に、将来に", word: "in the future", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      }
+    ]
+  },
+  {
+    unit: "【中2】Unit5",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "すべての人々の", word: "universal", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "デザイン", word: "design", past: "designed", ppart: "designed", ing: "designing", isImportant: false },
+          { meaning: "博覧会、フェア", word: "fair", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "びん、ボトル", word: "bottle", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "自動式の", word: "automatic", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "調節可能な", word: "adjustable", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "公の、公共の", word: "public", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜にさわる、ふれる", word: "touch", past: "touched", ppart: "touched", ing: "touching", isImportant: true },
+          { meaning: "製品", word: "product", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "施設、設備", word: "facility", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "市役所", word: "city hall", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "part2",
+        words: [
+          { meaning: "職員、従業員", word: "staff", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜を軽くたたく", word: "tap", past: "tapped", ppart: "tapped", ing: "tapping", isImportant: false },
+          { meaning: "カスタネット", word: "castanets", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜も…も両方", word: "both", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "左利きの、左利き用の", word: "left-handed", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "右効きの、右利き用の", word: "right-handed", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "こちらに、こちらでは", word: "over here", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜のおかげで", word: "thanks to ~", past: "—", ppart: "—", ing: "—", isImportant: true }
+        ]
+      },
+      {
+        part: "Read and Think 1",
+        words: [
+          { meaning: "役に立つ、有用な", word: "useful", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "標識、看板提示", word: "sign", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "若い、幼い", word: "young", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "スロープ", word: "ramp", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "階段", word: "stair", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "車いす", word: "wheelchair", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜をひく", word: "pull", past: "pulled", ppart: "pulled", ing: "pulling", isImportant: true },
+          { meaning: "手荷物", word: "baggage", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "赤ん坊", word: "baby", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "発表、プレゼンテーション", word: "presentation", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 2",
+        words: [
+          { meaning: "アメリカの、アメリカ人の", word: "American", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "教授", word: "professor", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "子供の頃", word: "childhood", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を取り除く", word: "remove", past: "removed", ppart: "removed", ing: "removing", isImportant: false },
+          { meaning: "壁、障壁", word: "barrier", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "体の不自由な、機能しない", word: "disabled", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "何があっても、とにかく", word: "regardless", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "能力、〜できること", word: "ability", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "立場、境遇、状況", word: "situation", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を創立する", word: "found", past: "founded", ppart: "founded", ing: "founding", isImportant: true },
+          { meaning: "中心地、センター", word: "center", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を広げる、広める", word: "spread", past: "spread", ppart: "spread", ing: "spreading", isImportant: true },
+          { meaning: "使いやすい、行きやすい", word: "accessible", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜年代", word: "~s", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜にかかわらず", word: "regardless of ~", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      }
+    ]
+  },
+  {
+    unit: "【中2】Unit6",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "雑学的な知識", word: "trivia", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "クイズ", word: "quiz", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "コート", word: "court", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜よりも", word: "than", past: "—", ppart: "—", ing: "—", isImportant: true }
+        ]
+      },
+      {
+        part: "part2",
+        words: [
+          { meaning: "調査", word: "survey", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "カーリング", word: "curling", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "もっと〜", word: "more", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "戦略、作戦", word: "strategy", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "腕前、技術", word: "skill", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "一番〜、最も", word: "most", past: "—", ppart: "—", ing: "—", isImportant: true }
+        ]
+      },
+      {
+        part: "Read and Think 1",
+        words: [
+          { meaning: "グラフ、図表", word: "graph", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "パーセント", word: "percent", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "そのような、このような", word: "such", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "結論、決定、結末、結び", word: "conclusion", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "半分、2分の1", word: "half", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "よりよく、より以上に", word: "better", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜によれば", word: "according to ~", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜についていえば", word: "as for ~", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "…のような〜", word: "~ such as ...", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "最後に、結論として", word: "in conclusion", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜より多くの人", word: "more than ~", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 2",
+        words: [
+          { meaning: "フィードバック", word: "feedback", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "話す人、演説者", word: "speaker", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "中身、内容", word: "content", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "話しぶり", word: "delivery", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "はっきりした", word: "clear", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "接触", word: "contact", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "批評、コメント", word: "comment", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "話題、トピック", word: "topic", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "（speakの過去形）", word: "spoke", past: "spoke", ppart: "spoken", ing: "speaking", isImportant: true },
+          { meaning: "資料、データ", word: "data", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "スライド", word: "slide", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "文字", word: "letter", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      }
+    ]
+  },
+  {
+    unit: "【中2】Unit7",
+    parts: [
+      {
+        part: "part1",
+        words: [
+          { meaning: "〜を選ぶ", word: "select", past: "selected", ppart: "selected", ing: "selecting", isImportant: true },
+          { meaning: "遺産", word: "heritage", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "遺跡", word: "site", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "自然の", word: "natural", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "文化の", word: "cultural", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "混合した", word: "mixed", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "選択", word: "selection", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "基準", word: "standard", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を決める", word: "decide", past: "decided", ppart: "decided", ing: "deciding", isImportant: true },
+          { meaning: "一般的な、総合的な、全般的な", word: "general", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "会議、評議会", word: "conference", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "part2",
+        words: [
+          { meaning: "すばらしい、すてきな", word: "fantastic", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "故郷", word: "hometown", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "花の", word: "floral", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "地方、地域", word: "region", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "（knowの過去分詞）", word: "known", past: "knew", ppart: "known", ing: "knowing", isImportant: true },
+          { meaning: "植物", word: "plant", past: "planted", ppart: "planted", ing: "planting", isImportant: true },
+          { meaning: "多様性、相違点", word: "diversity", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "種", word: "species", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 1",
+        words: [
+          { meaning: "（buildの過去分詞）", word: "built", past: "built", ppart: "built", ing: "building", isImportant: true },
+          { meaning: "皇帝", word: "emperor", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "妻", word: "wife", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "建築、建築学、建築様式", word: "architecture", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜を覆う、包む", word: "cover", past: "covered", ppart: "covered", ing: "covering", isImportant: true },
+          { meaning: "大理石", word: "marble", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "宝石", word: "jewel", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "原料、材料、生地", word: "material", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "汚染、汚れ", word: "pollution", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "政府", word: "government", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "〜を守る、保護する", word: "protect", past: "protected", ppart: "protected", ing: "protecting", isImportant: true },
+          { meaning: "〜を記念して", word: "in memory of ~", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "遠くから", word: "from far away", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜のために", word: "because of ~", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      },
+      {
+        part: "Read and Think 2",
+        words: [
+          { meaning: "〜を載せる", word: "list", past: "listed", ppart: "listed", ing: "listing", isImportant: false },
+          { meaning: "（seeの過去分詞）", word: "seen", past: "saw", ppart: "seen", ing: "seeing", isImportant: true },
+          { meaning: "観光客", word: "tourist", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜に上る", word: "climb", past: "climbed", ppart: "climbed", ing: "climbing", isImportant: true },
+          { meaning: "日の出", word: "sunrise", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "雲", word: "cloud", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "噴火口", word: "crater", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "量、額", word: "amount", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "小道", word: "trail", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "最近、近頃", word: "recently", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "大掃除", word: "cleanup", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "キャンペーン", word: "campaign", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "永久に、永遠に", word: "forever", past: "—", ppart: "—", ing: "—", isImportant: true },
+          { meaning: "ますます", word: "more and more", past: "—", ppart: "—", ing: "—", isImportant: false },
+          { meaning: "〜の量の…", word: "a ~ amount of ...", past: "—", ppart: "—", ing: "—", isImportant: false }
+        ]
+      }
+    ]
   }
 ];
 
@@ -493,7 +979,7 @@ const pronounTableData = {
   ]
 };
 
-// Unit1〜Unit10のすべてのPartの単語を1つにまとめた「すべて」用データを作成
+// 全UnitのすべてのPartの単語を1つにまとめた「すべて」用データを作成
 const allUnitsCombinedData = {
   unit: "すべて",
   parts: [
@@ -633,7 +1119,6 @@ function switchMode(mode) {
   }
 }
 
-// HTML側からの呼び出し (changeFilterMode) に対応
 function changeFilterMode(filterType) {
   currentFilter = filterType;
   document.getElementById('filter-all').classList.toggle('active', filterType === 'all');
@@ -675,7 +1160,6 @@ function toggleFavorite(wordObj, btn) {
   }
   saveFavorites();
 
-  // お気に入りフィルター中にお気に入りを外した場合にリアルタイムで反映する
   if(currentFilter === 'favorite' && currentMode !== 'question' && currentMode !== 'pronoun') {
     renderContent();
   }
@@ -778,7 +1262,7 @@ function renderContent() {
 }
 
 function getUnitColor(idx) {
-  const colors = ['#2563eb', '#059669', '#d97706', '#dc2626', '#7c3aed', '#db2777', '#0284c7', '#16a34a', '#ca8a04', '#9333ea'];
+  const colors = ['#2563eb', '#059669', '#d97706', '#dc2626', '#7c3aed', '#db2777', '#0284c7', '#16a34a', '#ca8a04', '#9333ea', '#4f46e5', '#0891b2', '#0d9488'];
   return colors[idx % colors.length];
 }
 
